@@ -1,36 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markdown to HTML Converter — Free Online Tool | Tabutility</title>
-    <meta name="description" content="Free Markdown to HTML converter. Convert Markdown to HTML instantly. Write in Markdown, get clean HTML — perfect for blogging, documentation, and content creation. No sign-up." />
-    <meta name="keywords" content="markdown to html, markdown converter, md to html, markdown parser, markdown editor, convert markdown, free markdown converter" />
-    <link rel="canonical" href="https://markdown-to-html.tabutility.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://markdown-to-html.tabutility.com/" />
-    <meta property="og:title" content="Markdown to HTML Converter — Free Online Tool" />
-    <meta property="og:description" content="Convert Markdown to HTML instantly. Free, no sign-up." />
-    <meta property="og:site_name" content="Tabutility" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Markdown to HTML Converter — Free Online Tool" />
-    <meta name="twitter:description" content="Convert Markdown to HTML instantly. Free, no sign-up." />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>" />
-    <meta name="robots" content="index, follow" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-78VZWJ5B1W');
-    </script>
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "WebApplication", "name": "Markdown to HTML Converter", "url": "https://markdown-to-html.tabutility.com", "description": "Free online Markdown to HTML converter. Write in Markdown, get clean HTML instantly.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }, "provider": { "@type": "Organization", "name": "Tabutility", "url": "https://tabutility.com" } }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Markdown to HTML Converter — Tabutility</title>
+<meta name="description" content="Free Markdown to HTML converter. Write or paste Markdown and see the rendered HTML preview instantly."/>
+<meta name="keywords" content="markdown to html, markdown converter, markdown preview, markdown editor online, md to html"/>
+<link rel="canonical" href="https://markdown-to-html.tabutility.com/"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>"/>
+<meta property="og:title" content="Markdown to HTML Converter"/>
+<meta property="og:description" content="Free Markdown to HTML converter with live preview. Instant, in-browser conversion."/>
+<meta property="og:url" content="https://markdown-to-html.tabutility.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Tabutility"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Markdown to HTML Converter"/>
+<meta name="twitter:description" content="Free Markdown to HTML converter with live preview. Instant, in-browser conversion."/>
+<meta name="robots" content="index, follow"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-78VZWJ5B1W');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Markdown to HTML Converter","url":"https://markdown-to-html.tabutility.com/","description":"Free Markdown to HTML converter. Write or paste Markdown and see the rendered HTML preview instantly.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"Developer Tools","item":"https://tabutility.com"},{"@type":"ListItem","position":3,"name":"Markdown to HTML Converter","item":"https://markdown-to-html.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does this support all Markdown?","acceptedAnswer":{"@type":"Answer","text":"It supports CommonMark basics: headings, bold, italic, links, images, lists, code blocks and blockquotes."}},{"@type":"Question","name":"Is my content saved?","acceptedAnswer":{"@type":"Answer","text":"No — everything is processed in your browser. Nothing is sent to any server."}},{"@type":"Question","name":"Is the Markdown to HTML Converter free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely free, no sign-up needed."}},{"@type":"Question","name":"Can I copy the HTML?","acceptedAnswer":{"@type":"Answer","text":"Yes — click Copy HTML to get the rendered HTML output."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;gap:16px}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}nav a:hover{color:#f1f5f9}
+nav .brand{color:#38bdf8;font-weight:700;font-size:18px}
+.ad-banner{background:#1e293b;border-bottom:1px solid #334155;padding:4px;text-align:center}
+#app{max-width:1000px;margin:8px auto;padding:0 16px 40px}
+h1{font-size:clamp(20px,4vw,28px);font-weight:800;margin:24px 0 6px;color:#f1f5f9}
+.subtitle{color:#94a3b8;font-size:14px;margin-bottom:16px}
+.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.btn{display:inline-flex;align-items:center;gap:6px;background:#38bdf8;color:#0f172a;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s}
+.btn:hover{background:#7dd3fc}
+.btn-outline{background:transparent;border:1px solid #334155;color:#f1f5f9}
+.btn-outline:hover{background:#334155}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px;height:520px}
+@media(max-width:680px){.split{grid-template-columns:1fr;height:auto}}
+.pane-label{font-size:12px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+#mdInput{width:100%;height:100%;background:#0f172a;border:1px solid #334155;border-radius:10px;color:#f1f5f9;font-family:monospace;font-size:13px;padding:14px;resize:none;outline:none;line-height:1.6}
+#mdInput:focus{border-color:#38bdf8}
+.preview-pane{height:100%;background:#0f172a;border:1px solid #334155;border-radius:10px;padding:18px 20px;overflow-y:auto;line-height:1.7}
+.raw-html-pane{height:100%;background:#0f172a;border:1px solid #334155;border-radius:10px;padding:14px;overflow:auto;font-family:monospace;font-size:12px;color:#94a3b8;white-space:pre;display:none}
+/* Markdown preview styles */
+.preview-pane h1,.preview-pane h2,.preview-pane h3,.preview-pane h4,.preview-pane h5,.preview-pane h6{color:#f1f5f9;margin:1em 0 .4em;line-height:1.3}
+.preview-pane h1{font-size:2em;border-bottom:1px solid #334155;padding-bottom:.3em}
+.preview-pane h2{font-size:1.5em;border-bottom:1px solid #1e293b;padding-bottom:.2em}
+.preview-pane h3{font-size:1.25em}
+.preview-pane p{margin:.6em 0;color:#cbd5e1}
+.preview-pane a{color:#38bdf8;text-decoration:underline}
+.preview-pane strong{color:#f1f5f9;font-weight:700}
+.preview-pane em{color:#e2e8f0;font-style:italic}
+.preview-pane code{background:#1e293b;color:#f472b6;padding:2px 6px;border-radius:4px;font-family:monospace;font-size:.9em}
+.preview-pane pre{background:#1e293b;border:1px solid #334155;border-radius:8px;padding:14px;overflow-x:auto;margin:.8em 0}
+.preview-pane pre code{background:none;color:#a5f3fc;padding:0;font-size:.88em}
+.preview-pane blockquote{border-left:3px solid #38bdf8;padding:.4em 1em;margin:.8em 0;color:#94a3b8;background:#1e293b;border-radius:0 6px 6px 0}
+.preview-pane ul,.preview-pane ol{padding-left:1.5em;margin:.6em 0;color:#cbd5e1}
+.preview-pane li{margin:.2em 0}
+.preview-pane hr{border:none;border-top:1px solid #334155;margin:1.2em 0}
+.preview-pane table{border-collapse:collapse;width:100%;margin:.8em 0}
+.preview-pane th,.preview-pane td{border:1px solid #334155;padding:6px 12px;font-size:13px}
+.preview-pane th{background:#1e293b;color:#f1f5f9}
+.preview-pane td{color:#94a3b8}
+.preview-pane img{max-width:100%;border-radius:6px}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;padding:10px 22px;border-radius:8px;font-size:14px;font-weight:600;opacity:0;transition:opacity .3s;pointer-events:none;z-index:999}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+<nav><span class="brand">⚡ Tabutility</span><a href="https://tabutility.com">← All Tools</a></nav>
+<div class="ad-banner"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<div id="app">
+  <h1>📄 Markdown to HTML Converter</h1>
+  <p class="subtitle">Write or paste Markdown — see the live rendered preview and raw HTML instantly.</p>
+
+  <div class="toolbar">
+    <button class="btn btn-outline" onclick="copyHTML()">📋 Copy HTML</button>
+    <button class="btn btn-outline" onclick="toggleRaw()">&#60;/&#62; Toggle Raw HTML</button>
+    <button class="btn btn-outline" onclick="clearAll()">✕ Clear</button>
+    <button class="btn btn-outline" onclick="loadSample()">📝 Load Sample</button>
+  </div>
+
+  <div class="split">
+    <div style="display:flex;flex-direction:column">
+      <div class="pane-label">Markdown Input</div>
+      <textarea id="mdInput" placeholder="# Hello World&#10;&#10;Type **Markdown** here and see the preview update live.&#10;&#10;- Item 1&#10;- Item 2&#10;&#10;> A blockquote&#10;&#10;`inline code` and code blocks too!" oninput="render()" spellcheck="false"></textarea>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <div class="pane-label" id="previewLabel">Preview</div>
+      <div class="preview-pane" id="previewPane"></div>
+      <div class="raw-html-pane" id="rawPane"></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Copied!</div>
+
+<div style="max-width:1000px;margin-left:auto;margin-right:auto;margin-top:24px;margin-bottom:8px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://word-counter.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Word Counter</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Text Tools</div></a>
+      <a href="https://json-formatter.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">JSON Formatter</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://url-encoder.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">URL Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://base64-encoder.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Base64 Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:1000px;margin-left:auto;margin-right:auto;margin-top:8px;margin-bottom:24px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Frequently Asked Questions</h2>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Does this support all Markdown?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">It supports CommonMark basics: headings, bold, italic, links, images, lists, code blocks, tables and blockquotes.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Is my content saved?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">No — everything is processed in your browser. Nothing is sent to any server.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Is this free?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — completely free, no sign-up needed.</div>
+    </div>
+    <div style="padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Can I copy the HTML?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — click "Copy HTML" to get the rendered HTML output ready to paste anywhere.</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:8px">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+<script>
+let rawVisible=false;
+let currentHTML='';
+
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function parseMarkdown(md){
+  let html=md;
+  // Escape HTML first (except we'll handle code blocks specially)
+  // Code blocks (fenced)
+  html=html.replace(/```(\w*)\n?([\s\S]*?)```/gm,function(_,lang,code){
+    return '<pre><code class="lang-'+esc(lang)+'">'+esc(code.trim())+'</code></pre>';
+  });
+  // Inline code
+  html=html.replace(/`([^`\n]+)`/g,function(_,c){return '<code>'+esc(c)+'</code>';});
+  // Headers
+  html=html.replace(/^######\s(.+)$/gm,'<h6>$1</h6>');
+  html=html.replace(/^#####\s(.+)$/gm,'<h5>$1</h5>');
+  html=html.replace(/^####\s(.+)$/gm,'<h4>$1</h4>');
+  html=html.replace(/^###\s(.+)$/gm,'<h3>$1</h3>');
+  html=html.replace(/^##\s(.+)$/gm,'<h2>$1</h2>');
+  html=html.replace(/^#\s(.+)$/gm,'<h1>$1</h1>');
+  // Blockquote
+  html=html.replace(/^>\s(.+)$/gm,'<blockquote>$1</blockquote>');
+  // HR
+  html=html.replace(/^---+$/gm,'<hr/>');
+  html=html.replace(/^\*\*\*+$/gm,'<hr/>');
+  // Bold + Italic
+  html=html.replace(/\*\*\*(.+?)\*\*\*/g,'<strong><em>$1</em></strong>');
+  html=html.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  html=html.replace(/\*(.+?)\*/g,'<em>$1</em>');
+  html=html.replace(/__(.+?)__/g,'<strong>$1</strong>');
+  html=html.replace(/_(.+?)_/g,'<em>$1</em>');
+  // Strikethrough
+  html=html.replace(/~~(.+?)~~/g,'<del>$1</del>');
+  // Images before links
+  html=html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g,'<img src="$2" alt="$1"/>');
+  // Links
+  html=html.replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  // Tables
+  html=html.replace(/^\|(.+)\|\n\|[-| :]+\|\n((?:\|.+\|\n?)+)/gm,function(_,header,rows){
+    const ths=header.split('|').filter(c=>c.trim()).map(c=>'<th>'+c.trim()+'</th>').join('');
+    const trs=rows.trim().split('\n').map(row=>{
+      const tds=row.split('|').filter(c=>c.trim()).map(c=>'<td>'+c.trim()+'</td>').join('');
+      return '<tr>'+tds+'</tr>';
+    }).join('');
+    return '<table><thead><tr>'+ths+'</tr></thead><tbody>'+trs+'</tbody></table>';
+  });
+  // Unordered lists
+  html=html.replace(/((?:^[\*\-\+]\s.+\n?)+)/gm,function(_,block){
+    const items=block.trim().split('\n').map(l=>'<li>'+l.replace(/^[\*\-\+]\s/,'')+'</li>').join('');
+    return '<ul>'+items+'</ul>';
+  });
+  // Ordered lists
+  html=html.replace(/((?:^\d+\.\s.+\n?)+)/gm,function(_,block){
+    const items=block.trim().split('\n').map(l=>'<li>'+l.replace(/^\d+\.\s/,'')+'</li>').join('');
+    return '<ol>'+items+'</ol>';
+  });
+  // Paragraphs (double newlines)
+  html=html.split(/\n{2,}/).map(block=>{
+    block=block.trim();
+    if(!block) return '';
+    if(/^<(h[1-6]|ul|ol|li|pre|blockquote|table|hr)/.test(block)) return block;
+    return '<p>'+block.replace(/\n/g,' ')+'</p>';
+  }).join('\n');
+  return html;
+}
+
+function render(){
+  const md=document.getElementById('mdInput').value;
+  currentHTML=parseMarkdown(md);
+  document.getElementById('previewPane').innerHTML=currentHTML;
+  document.getElementById('rawPane').textContent=currentHTML;
+}
+
+function toggleRaw(){
+  rawVisible=!rawVisible;
+  document.getElementById('previewPane').style.display=rawVisible?'none':'block';
+  document.getElementById('rawPane').style.display=rawVisible?'block':'none';
+  document.getElementById('previewLabel').textContent=rawVisible?'Raw HTML':'Preview';
+}
+
+function copyHTML(){
+  if(!currentHTML) return;
+  navigator.clipboard.writeText(currentHTML).then(()=>showToast());
+}
+
+function clearAll(){
+  document.getElementById('mdInput').value='';
+  document.getElementById('previewPane').innerHTML='';
+  document.getElementById('rawPane').textContent='';
+  currentHTML='';
+}
+
+function loadSample(){
+  document.getElementById('mdInput').value=`# Welcome to Markdown Preview
+
+This is a **live** Markdown editor. Try editing the text on the left!
+
+## Features Supported
+
+- **Bold** and *italic* text
+- ~~Strikethrough~~
+- \`inline code\`
+- [Links](https://tabutility.com)
+
+### Code Block
+
+\`\`\`javascript
+function hello(name) {
+  return \`Hello, \${name}!\`;
+}
+\`\`\`
+
+> This is a blockquote — great for highlighting important notes.
+
+### Ordered List
+
+1. First item
+2. Second item
+3. Third item
+
+---
+
+### Table
+
+| Name | Role | Status |
+|------|------|--------|
+| Alice | Developer | Active |
+| Bob | Designer | Active |
+`;
+  render();
+}
+
+render();
+</script>
+</body>
 </html>
