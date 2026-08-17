@@ -219,7 +219,7 @@ function parseMarkdown(md){
   // Strikethrough
   html=html.replace(/~~(.+?)~~/g,'<del>$1</del>');
   // Images before links
-  html=html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g,'<img src="$2" alt="$1"/>');
+  html=html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g,'<img src="$2" alt="$1" fetchpriority="high">');
   // Links
   html=html.replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
   // Tables
