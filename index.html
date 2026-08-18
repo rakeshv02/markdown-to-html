@@ -366,6 +366,106 @@ render();
 <div>Free, private, browser-based tools. No sign-up, no tracking.</div>
 <div style="margin-top:6px"><a href="https://tabutility.com" style="color:#818cf8;font-weight:600;text-decoration:none">All Tools</a> · <a href="https://tabutility.com/blog/" style="color:#94a3b8;text-decoration:none">Blog</a> · <a href="https://tabutility.com/about/" style="color:#94a3b8;text-decoration:none">About</a> · <a href="https://tabutility.com/privacy-policy/" style="color:#94a3b8;text-decoration:none">Privacy</a> · <a href="https://tabutility.com/contact/" style="color:#94a3b8;text-decoration:none">Contact</a></div>
 <div style="margin-top:6px;color:#64748b">© 2026 Tabutility</div>
-</footer>
+
+  <section id="seo-content" style="background:#1a1a2e;color:#e2e8f0;padding:60px 20px;margin-top:40px;border-top:1px solid #2d3748;">
+    <div style="max-width:860px;margin:0 auto;font-family:system-ui,-apple-system,sans-serif;line-height:1.7;">
+      <h2 style="font-size:2rem;font-weight:700;color:#f1f5f9;margin-bottom:24px;">How to Use the Markdown to HTML</h2>
+      <p style="margin-bottom:16px;color:#cbd5e1;">The Markdown to HTML Converter transforms Markdown-formatted text into clean, valid HTML with a live preview. It's an essential tool for bloggers, technical writers, documentation authors, and developers who write in Markdown but need HTML output.</p>
+      <p style="margin-bottom:16px;color:#cbd5e1;">Type or paste Markdown into the left pane and see the rendered HTML in the right pane instantly. The tool supports the full CommonMark specification including headings, bold, italic, links, images, code blocks, tables, blockquotes, and lists. Copy the raw HTML output with one click.</p>
+      <p style="margin-bottom:16px;color:#cbd5e1;">A nuance to understand is that there are several Markdown flavours. CommonMark is the standardised specification; GitHub Flavored Markdown (GFM) adds tables, task lists, and strikethrough; MultiMarkdown adds footnotes and definition lists. Our converter supports CommonMark with common GFM extensions including tables and fenced code blocks.</p>
+
+      <div style="background:#0f172a;border:1px solid #334155;border-radius:12px;padding:28px;margin:32px 0;">
+        <h3 style="font-size:1.2rem;font-weight:600;color:#f1f5f9;margin-bottom:16px;">📊 Worked Example</h3>
+        <p style="color:#94a3b8;margin:0 0 12px;">Common Markdown → HTML conversions:</p>
+        <ul style="list-style:none;padding:0;margin:0;color:#cbd5e1;font-family:monospace;font-size:0.85rem;">
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;"># Heading 1  →  <strong style="color:#34d399;">&lt;h1&gt;Heading 1&lt;/h1&gt;</strong></li>
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;">**bold**  →  <strong style="color:#34d399;">&lt;strong&gt;bold&lt;/strong&gt;</strong></li>
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;">[text](url)  →  <strong style="color:#34d399;">&lt;a href="url"&gt;text&lt;/a&gt;</strong></li>
+          <li style="padding:6px 0;">```code```  →  <strong style="color:#34d399;">&lt;pre&gt;&lt;code&gt;code&lt;/code&gt;&lt;/pre&gt;</strong></li>
+        </ul>
+      </div>
+
+      <h3 style="font-size:1.4rem;font-weight:600;color:#f1f5f9;margin:32px 0 16px;">Common Use Cases</h3>
+      <ul style="list-style:none;padding:0;margin:0 0 32px;">
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Converting README files from Markdown to HTML for web display</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Writing blog posts in Markdown and exporting clean HTML for a CMS</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Generating email-ready HTML from Markdown drafts</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Converting API or SDK documentation to HTML</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Checking that Markdown renders correctly before publishing</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Learning Markdown syntax by seeing the HTML output instantly</li>
+      </ul>
+
+      <h3 style="font-size:1.4rem;font-weight:600;color:#f1f5f9;margin:32px 0 24px;">Frequently Asked Questions</h3>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">What is Markdown?</h4>
+        <p style="color:#cbd5e1;margin:0;">Markdown is a lightweight markup language created by John Gruber in 2004. It uses plain text syntax (like # for headings, ** for bold, and - for bullet points) that converts to well-structured HTML. It's widely used in README files, documentation, forums (Reddit, Stack Overflow), and content management systems.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">What Markdown features does this converter support?</h4>
+        <p style="color:#cbd5e1;margin:0;">The converter supports headings (# to ######), emphasis (**bold**, *italic*, ~~strikethrough~~), links, images, ordered and unordered lists, nested lists, code inline and fenced blocks with language highlighting, blockquotes, horizontal rules, and tables (GFM extension).</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">How do I add a table in Markdown?</h4>
+        <p style="color:#cbd5e1;margin:0;">Tables use pipe | characters. Example: | Header 1 | Header 2 | on the first line, | --- | --- | on the second line for alignment, then | Cell 1 | Cell 2 | for each row. Columns separated by | pipes. Left-align with :---, centre with :---:, right-align with ---:.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">Does the converter sanitize the HTML output?</h4>
+        <p style="color:#cbd5e1;margin:0;">Our converter produces standard Markdown → HTML. If you're inserting user-supplied Markdown into a web page, you should sanitize the HTML output using a library like DOMPurify to prevent XSS attacks. Raw Markdown can include raw HTML, which would be passed through to the output.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">What is the difference between Markdown and MDX?</h4>
+        <p style="color:#cbd5e1;margin:0;">MDX is Markdown for the JavaScript ecosystem that allows embedding JSX/React components directly in Markdown files. It's used in Next.js, Gatsby, and Docusaurus for documentation and blogs. Our converter handles standard Markdown and GFM; MDX requires a dedicated build-time processor.</p>
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Markdown?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Markdown is a lightweight markup language created by John Gruber in 2004. It uses plain text syntax (like # for headings, ** for bold, and - for bullet points) that converts to well-structured HTML. It's widely used in README files, documentation, forums (Reddit, Stack Overflow), and content management systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Markdown features does this converter support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The converter supports headings (# to ######), emphasis (**bold**, *italic*, ~~strikethrough~~), links, images, ordered and unordered lists, nested lists, code inline and fenced blocks with language highlighting, blockquotes, horizontal rules, and tables (GFM extension)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add a table in Markdown?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tables use pipe | characters. Example: | Header 1 | Header 2 | on the first line, | --- | --- | on the second line for alignment, then | Cell 1 | Cell 2 | for each row. Columns separated by | pipes. Left-align with :---, centre with :---:, right-align with ---:."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the converter sanitize the HTML output?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our converter produces standard Markdown → HTML. If you're inserting user-supplied Markdown into a web page, you should sanitize the HTML output using a library like DOMPurify to prevent XSS attacks. Raw Markdown can include raw HTML, which would be passed through to the output."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Markdown and MDX?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MDX is Markdown for the JavaScript ecosystem that allows embedding JSX/React components directly in Markdown files. It's used in Next.js, Gatsby, and Docusaurus for documentation and blogs. Our converter handles standard Markdown and GFM; MDX requires a dedicated build-time processor."
+      }
+    }
+  ]
+}
+  </script>
+  </footer>
 </body>
 </html>
